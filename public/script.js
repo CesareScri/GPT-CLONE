@@ -23,7 +23,7 @@ submitDom.addEventListener("click", async function () {
   };
 
   try {
-    const response = await fetch(`http://localhost:3000/chatbot`, postData);
+    const response = await fetch(`https://gpt-clone-eta.vercel.app/chatbot`, postData);
     const reader = response.body.getReader();
 
     // Start an interval to keep scrolling to the bottom
